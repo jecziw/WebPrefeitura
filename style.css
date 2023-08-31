@@ -1,0 +1,283 @@
+/* Reset de estilos */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos gerais */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 82, 204, 0);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .logo img {
+    max-width: 272px;
+    max-height: 100%;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 15px; /* Adicione uma margem superior para abaixar a lista de links */
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #99c2ff;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .image-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-height: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Ajuste na caixa de busca */
+
+nav ul li.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: -5px; /* Ajuste a margem superior conforme necessário */
+  }
+  
+  nav ul li.search-box input[type="text"] {
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    font-size: 16px;
+  }
+  
+  nav ul li.search-box input[type="text"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .banner-horizontal {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    margin-top: 272px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-horizontal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0; /* Remova o espaçamento entre os itens */
+    flex-wrap: wrap;
+  }
+  
+  .banner-horizontal li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .banner-horizontal li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .banner-horizontal li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Adicione estilos para o link Portal do Cidadão */
+  .banner-horizontal li a.portal-link::before {
+    content: '';
+    background-image: url('images/Portal\ do\ Cidadão.png'); /* Substitua pelo caminho real da sua imagem */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+/* Adicione estilos para o link Covid-19 */
+.banner-horizontal li a.covid-link::before {
+  content: '';
+  background-image: url('images/Covid-19.png'); /* Substitua pelo caminho real da imagem */
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-size: cover;
+}
+
+/* Adicione estilos para o link Plano Diretório Municipal */
+.banner-horizontal li a.plano-link::before {
+  content: '';
+  background-image: url('images/Plano\ Diretório\ Municipal.png'); /* Substitua pelo caminho real da imagem */
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-size: cover;
+}
+
+/* Adicione estilos para o link Serviços da Cidade */
+.banner-horizontal li a.servicos-link::before {
+  content: '';
+  background-image: url('images/Serviços\ da\ Cidade.png'); /* Substitua pelo caminho real da imagem */
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-size: cover;
+}
+  
+  .banner {
+    background-color: rgba(76, 57, 200, 0.99);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -15px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
+    margin-bottom: 20px;
+  }
+  
+  .banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+  }
+  
+  .map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin-top: -20px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
+
+}
+
+.news-banner {
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.news-banner h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.news-banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Alinhamento horizontal */
+}
+
+.news-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.33% - 20px);
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contact-banner {
+  background-color: rgba(76, 57, 200, 0.99);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
+    margin-bottom: 20px;
+}
+
+.contact-banner h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ... (seus outros estilos) ... */
