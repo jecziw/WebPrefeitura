@@ -28,7 +28,7 @@ Estamos animados para colaborar com a comunidade! Siga estas etapas para contrib
 
 ## ⚠️ Aviso Legal
 
-Este projeto é protegido por direitos autorais e pertence exclusivamente à Prefeitura de Garopaba. Qualquer uso não autorizado deste código é estritamente proibido e pode resultar em ações legais.
+Este projeto é protegido por direitos autorais e pertence exclusivamente ao Jefferson Goulart. Qualquer uso não autorizado deste código é estritamente proibido e pode resultar em ações legais.
 
 ## 📬 Entre em Contato
 
