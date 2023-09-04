@@ -2,9 +2,9 @@
 
 **Bem-vindo ao Repositório WebPrefeitura!** Aqui, estou construindo um futuro digital para Garopaba, unindo tecnologia e cidadania.
 
-## 🏢 Visão Geral
+## Visão Geral
 
-O **WebPrefeitura** é um projeto ambicioso que visa transformar a experiência dos cidadãos e visitantes de Garopaba. Minha visão é criar uma plataforma online moderna, acessível e envolvente, que sirva como um hub central para acesso a informações municipais, serviços essenciais e participação cívica. Esta iniciativa reflete nosso compromisso em promover uma cidade mais conectada e informada.
+A **WebPrefeitura** é um projeto ambicioso que visa transformar a experiência dos cidadãos e visitantes de Garopaba. Minha visão é criar uma plataforma online moderna, acessível e envolvente, que sirva como um hub central para acesso a informações municipais, serviços essenciais e participação cívica. Esta iniciativa reflete nosso compromisso em promover uma cidade mais conectada e informada.
 
 ## ✨ Destaques
 
