@@ -105,9 +105,9 @@ nav ul li.search-box {
 
   .banner-horizontal {
     background-color: #f2f2f2;
-    padding: 50px 0;
-    margin-top: 272px;
-    margin-bottom: 20px;
+    padding: 50px 90;
+    margin-top: 202px;
+    margin-bottom: 15px;
   }
   
   .banner-horizontal ul {
@@ -266,7 +266,7 @@ nav ul li.search-box {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 0px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
+    margin-top: 10px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
     margin-bottom: 20px;
 }
 
@@ -277,6 +277,15 @@ nav ul li.search-box {
 
 .contact-banner p {
   font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.news-banner {
+  background-color: rgba(76, 57, 200, 0.99);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: -15px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
   margin-bottom: 20px;
 }
 
