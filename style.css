@@ -1,18 +1,19 @@
-/* Reset de estilos */
+/* Reset de margens e preenchimentos */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Estilos gerais */
-  body {
+}
+
+/* Estilos gerais para o corpo da página */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5;
     color: #333;
-  }
-  
-  .header {
-    font-size: 24px;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    font-size: 20px;
     font-weight: bold;
     font-family: Arial, sans-serif;
     background-color: rgba(0, 82, 204, 0);
@@ -23,71 +24,76 @@ body, h1, h2, p, ul, li {
     padding: 20px;
     position: relative;
     z-index: 2;
-  }
-  
-  .logo img {
+}
+
+/* Estilos para o logotipo */
+.logo img {
     max-width: 272px;
     max-height: 100%;
     margin-right: 10px;
-  }
-  
-  nav ul {
-  list-style: none;
-  display: flex;
-  margin-top: 15px; /* Adicione uma margem superior para abaixar a lista de links */
-  }
-  
-  nav ul li {
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: -9px;
+}
+
+nav ul li {
     margin-right: 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
+    border: none;
+}
+
+nav ul li a:hover {
     color: #99c2ff;
-  }
-  
-  main {
+}
+
+/* Estilos para a seção principal */
+main {
     padding: 40px;
-  }
-  
-  .image-section {
+}
+
+/* Estilos para a seção de imagem */
+.image-section {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
-  }
-  
-  .image-section img {
+}
+
+.image-section img {
     width: 100%;
-    max-height: 60vh;
+    max-height: 62vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .overlay {
+}
+
+/* Estilos para a sobreposição sobre a imagem */
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 99%;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Ajuste na caixa de busca */
+}
 
+/* Ajustes para a caixa de busca */
 nav ul li.search-box {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-top: -5px; /* Ajuste a margem superior conforme necessário */
-  }
-  
-  nav ul li.search-box input[type="text"] {
+    margin-top: -5px;
+}
+
+nav ul li.search-box input[type="text"] {
     border: none;
     padding: 8px;
     border-radius: 20px;
@@ -96,197 +102,398 @@ nav ul li.search-box {
     transition: background-color 0.3s ease;
     width: 150px;
     font-size: 16px;
-  }
-  
-  nav ul li.search-box input[type="text"]:focus {
+}
+
+nav ul li.search-box input[type="text"]:focus {
     background-color: #fff;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .banner-horizontal {
-    background-color: #f2f2f2;
-    padding: 50px 90;
-    margin-top: 202px;
-    margin-bottom: 15px;
-  }
-  
-  .banner-horizontal ul {
+/* Animação de fundo em movimento */
+@keyframes move-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Estilos para o novo banner */
+.new-banner {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 283px;
+    margin-bottom: -110px;
+}
+
+.new-banner ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 0; /* Remova o espaçamento entre os itens */
+    gap: 20px;
     flex-wrap: wrap;
-  }
-  
-  .banner-horizontal li {
+}
+
+.new-banner li {
     background-color: #fff;
     border-radius: 10px;
-    padding: 35px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .banner-horizontal li a {
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a.botao-veja-mais {
+    display: inline-block;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada */
+    text-decoration: none; /* Remova a decoração de texto padrão */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 5px; /* Espaço superior para separar do título */
+    margin-right: 90px; /* Margem direita de 10 pixels */
+}
+
+/* Estilo ao passar o mouse sobre o link "Veja Mais" */
+a.botao-veja-mais:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo para o link (a) dentro do item da lista */
+li a {
     color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .banner-horizontal li:hover {
+    text-decoration: none; /* Remover sublinhado padrão */
+    display: block; /* Fazer com que o link ocupe todo o espaço disponível */
+    padding: 10px; /* Espaçamento interno para melhorar a acessibilidade */
+    border-radius: 5px; /* Arredondar as bordas */
+    transition: background-color 0.2s; /* Efeito de transição para a cor de fundo */
+}
+
+.new-banner li a i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.new-banner li:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Adicione estilos para o link Portal do Cidadão */
-  .banner-horizontal li a.portal-link::before {
-    content: '';
-    background-image: url('images/Portal\ do\ Cidadão.png'); /* Substitua pelo caminho real da sua imagem */
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-    background-size: cover;
 }
 
-/* Adicione estilos para o link Covid-19 */
-.banner-horizontal li a.covid-link::before {
-  content: '';
-  background-image: url('images/Covid-19.png'); /* Substitua pelo caminho real da imagem */
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  background-size: cover;
+/* Adicione isso ao seu arquivo CSS */
+.small-image {
+    width: 80px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção */
 }
 
-/* Adicione estilos para o link Plano Diretório Municipal */
-.banner-horizontal li a.plano-link::before {
-  content: '';
-  background-image: url('images/Plano\ Diretório\ Municipal.png'); /* Substitua pelo caminho real da imagem */
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  background-size: cover;
-}
-
-/* Adicione estilos para o link Serviços da Cidade */
-.banner-horizontal li a.servicos-link::before {
-  content: '';
-  background-image: url('images/Serviços\ da\ Cidade.png'); /* Substitua pelo caminho real da imagem */
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  background-size: cover;
-}
-  
-  .banner {
-    background-color: rgba(76, 57, 200, 0.99);
-    color: white;
+/* Estilos para o banner de notícias moderno */
+.modern-news-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    color: #000;
     text-align: center;
     padding: 20px;
-    margin-top: -15px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
-    margin-bottom: 20px;
-  }
-  
-  .banner h2 {
+    margin-top: 110px; /* Altere o valor aqui para mover o banner para baixo */
+    margin-bottom: -120px;
+}
+
+.modern-news-banner h2 {
     font-size: 32px;
     margin-bottom: 10px;
-  }
-  
-  .banner p {
-    font-size: 18px;
-  }
-  
-  .map-container {
-    text-align: center;
-    margin-top: 20px;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-    margin-top: -20px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
-
-}
-
-.news-banner {
-  background-color: #ffcc00;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.news-banner h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.news-banner p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.news-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between; /* Alinhamento horizontal */
-}
-
-.news-item {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: calc(33.33% - 20px);
-}
-
-.news-item img {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.contact-banner {
-  background-color: rgba(76, 57, 200, 0.99);
-    color: white;
-    text-align: center;
+.modern-news-banner .news-section {
+    flex: 1;
     padding: 20px;
-    margin-top: 10px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
+    text-align: left;
+}
+
+.modern-news-banner .video-section {
+    flex: 1;
+}
+
+.modern-news-banner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modern-news-banner li {
     margin-bottom: 20px;
 }
 
-.contact-banner h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.modern-news-banner .news-content a,
+.modern-news-banner .news-content p {
+    border: none;
 }
 
-.contact-banner p {
-  font-size: 18px;
-  margin-bottom: 20px;
+/* Estilos para telas menores (exemplo) */
+@media screen and (max-width: 768px) {
+    .modern-news-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modern-news-banner .news-item {
+        flex-direction: column;
+    }
+
+    .modern-news-banner .news-item img {
+        max-width: 100%;
+        margin-right: 0;
+    }
 }
 
-.news-banner {
-  background-color: rgba(76, 57, 200, 0.99);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: -15px; /* Aumente este valor conforme necessário para mover o banner mais para baixo */
-  margin-bottom: 20px;
+/* Estilos para telas menores (exemplo) */
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 18px;
+    }
+
+    /* Outros estilos para telas menores aqui */
 }
 
-/* ... (seus outros estilos) ... */
+/* Estilos para telas com largura máxima de 480px */
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 16px;
+    }
+
+    /* Outros estilos para telas ainda menores aqui */
+}
+
+/* Estilos para o novo banner (agora chamado event-banner) */
+.event-banner {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 105px;
+    margin-bottom: -110px;
+}
+
+.event-banner ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-banner li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o calendário de eventos */
+.event-calendar {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 90px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-calendar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-calendar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.event-calendar li {
+    margin-bottom: 20px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.event-item img {
+    max-width: 100px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.event-details {
+    flex: 1;
+    text-align: left;
+}
+
+.event-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.event-details p {
+    margin: 5px 0;
+}
+
+.event-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo para o link (a) dentro do item da lista */
+.modern-news-banner li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-right: -5px; /* Adicione esta linha */
+}
+
+.modern-news-banner li a:hover {
+    background-color: #99c2ff;
+}
+
+.modern-news-banner .news-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc; /* Adiciona uma borda sólida */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px; /* Espaçamento interno para o conteúdo da notícia */
+}
+
+.modern-news-banner .news-item img {
+    max-width: 100px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+/* Estilização básica do footer */
+.footer {
+    background-color: #2C3E50; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto no footer */
+    padding: 30px 0; /* Reduce the top and bottom padding for a smaller banner */
+    text-align: center; /* Centraliza o conteúdo do footer */
+    margin-top: 110px;
+    margin-bottom: -110px;
+}
+
+/* Estilização para o container dentro do footer */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Estilização para as colunas do footer */
+.footer-contact,
+.footer-links,
+.footer-social,
+.footer-copyright {
+    flex-basis: calc(25% - 30px);
+    padding: 0 15px;
+}
+
+/* Estilização para os títulos das colunas */
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f39c12; /* Cor do título */
+    display: inline-block;
+    width: 100%; /* Set the width to 100% to make titles centered */
+    text-align: center; /* Center-align the titles */
+}
+
+/* Estilização para os links dentro das colunas */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização para os ícones de redes sociais */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social a {
+    color: #f39c12; /* Cor dos ícones de redes sociais */
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efeito de transição de cor suave */
+}
+
+/* Estilização para ícones de redes sociais no hover */
+.footer-social a:hover {
+    color: #e74c3c; /* Cor alternativa no hover */
+}
+
+/* Styling for the banner image */
+.footer-banner img {
+    width: 150px; /* Adjust the width as needed to make the banner smaller */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* Estilos para telas menores (exemplo) */
+@media screen and (max-width: 768px) {
+    /* Outros estilos para telas menores aqui */
+}
+
+/* Estilos para telas com largura máxima de 480px */
+@media screen and (max-width: 480px) {
+    /* Outros estilos para telas ainda menores aqui */
+}
