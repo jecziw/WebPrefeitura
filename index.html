@@ -1,12 +1,22 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Incluindo arquivos de estilo externos -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Estilo do Font Awesome -->
+  
   <title>Garopaba.com.br - O website oficial de Garopaba</title>
+  
+  <!-- Metadados para SEO -->
+  <meta name="keywords" content="Garopaba, Prefeitura, Serviços, Notícias">
   <meta name="description" content="O site da Prefeitura de Garopaba fornece um portal para os serviços prestados pelos poderes executivo, legislativo e judiciário.">
   <meta name="author" content="Jefferson Goulart">
+  <meta name="robots" content="index, follow">
+  <!-- Adicione outras meta tags relevantes conforme necessário -->
 </head>
 <body>
   <header class="header">
@@ -15,14 +25,16 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Serviços Online</a></li>
+        <!-- Links de navegação -->
+        <li><a href="#">Início</a></li>
         <li><a href="#">Empregos</a></li>
-        <li><a href="#">Governo</a></li>
-        <li><a href="#">Noticias</a></li>
-        <li><a href="#">Visite</a></li>
+        <li><a href="#">Residente</a></li>
+        <li><a href="#">História</a></li>
+        <li><a href="#">Prefeitura</a></li>
+        <!-- Caixa de pesquisa -->
         <li class="search-box">
-            <input type="text" placeholder="Pesquisar">
-          </li>
+          <input type="text" placeholder="Pesquisar">
+        </li>
       </ul>
     </nav>
   </header>
@@ -32,77 +44,159 @@
       <div class="overlay"></div>
     </div>
   </main>
-  <div class="banner-horizontal">
+  
+  <div class="new-banner">
     <ul>
+      <!-- Banners de links -->
       <li>
-        <a href="#" class="portal-link">Portal do Cidadão</a>
-      </li>
-      <li>
-        <a href="#" class="covid-link">
-          <img src="caminho/para/sua/imagem-covid.png" alt="Ícone Covid-19">
-          Covid-19
+        <a href="#">
+          <img class="small-image" src="Slide/icon/call.png" alt="Serviços">
+          <h3>Solicitar Serviços da Cidade</h3>
+          <p>Solicite documentos e licenças municipais e muito mais, diretamente pela internet.</p>
         </a>
       </li>
       <li>
-        <a href="#" class="plano-link">Plano Diretório Municipal</a>
+        <a href="#">
+          <img class="small-image" src="Slide/icon/conversation.png" alt="Plano">
+          <h3>Plano Diretório da Cidade</h3>
+          <p>Informações detalhadas sobre o plano diretor da cidade, projetos em andamento e oportunidades.</p>
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <img class="small-image" src="Slide/icon/House.png" alt="Informação">
+          <h3>Informações sobre o Bairro</h3>
+          <p>Descubra dados essenciais sobre seu bairro, incluindo estatísticas demográficas e recursos locais.</p>
+        </a>
       </li>
       <li>
-        <a href="#" class="servicos-link">Serviços da Cidade</a>
+        <a href="#">
+          <img class="small-image" src="Slide/icon/calendar.png" alt="Agendas">
+          <h3>Reuniões e Agendas</h3>
+          <p>Veja o calendário de reuniões públicas, eventos da cidade e agendas importantes.</p>
+        </a>
       </li>
     </ul>
   </div>
-  <div class="banner">
-    <h2>Serviços de Localização</h2>
-  </div>
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7044.017471064585!2d-48.62429931004245!3d-28.024208829233935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526d19fe518d1b5%3A0x8390d9511c794d3b!2sPrefeitura%20Municipal%20de%20Garopaba!5e0!3m2!1spt-BR!2sbr!4v1674669157317!5m2!1spt-BR!2sbr" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-    <div class="news-list">
-      <div class="news-item">
-        <img src="images/portfolio/Camiseta Ambulantes 2023.jpeg" alt="Imagem da Notícia">
-        <h3>Vendedores ambulantes recebem novos uniforme para temporada 2022/2023</h3>
-        <p>Descrição breve da Notícia 1.</p>
-        <a href="/noticia1">Leia mais</a>
-      </div>
-      
-      <div class="news-item">
-        <img src="images/portfolio/Chuva em Garopaba.jpeg" alt="Imagem da Notícia">
-        <h3>Forte Chuva em Garopaba</h3>
-        <p>Descrição breve da Notícia 2.</p>
-        <a href="/noticia2">Leia mais</a>
-      </div>
-      
-      <div class="news-item">
-        <img src="images/portfolio/Concurso Publico.jpeg" alt="Imagem da Notícia">
-        <h3>Concurso Público: Governo de Garopaba abre inscrições para 470 vagas</h3>
-        <p>Descrição breve da Notícia 3.</p>
-        <a href="/noticia3">Leia mais</a>
-      </div>
-      
-      <div class="news-item">
-        <img src="images/portfolio/Food Truck.jpeg" alt="Imagem da Notícia">
-        <h3>Governo de Garopaba oferece oportunidade para empresários de “Food Truck”</h3>
-        <p>Descrição breve da Notícia 4.</p>
-        <a href="/noticia4">Leia mais</a>
-      </div>
-      
-      <div class="news-item">
-        <img src="images/portfolio/Garopaba completa 61 anos.jpeg" alt="Imagem da Notícia">
-        <h3>Governo de Garopaba comemora o aniversário da cidade ao som de Camerata & Dazaranha</h3>
-        <p>Descrição breve da Notícia 5.</p>
-        <a href="/noticia5">Leia mais</a>
-      </div>
-      
-      <div class="news-item">
-        <img src="images/portfolio/Novos abrigos de onibus.jpeg" alt="Imagem da Notícia">
-        <h3>Novos pontos de ônibus</h3>
-        <p>Descrição breve da Notícia 6.</p>
-        <a href="/noticia6">Leia mais</a>
-      </div>
+
+  <div class="modern-news-banner">
+    <div class="news-section">
+      <h2>Últimas Notícias</h2>
+      <ul>
+        <!-- Seção de notícias -->
+        <li>
+          <div class="news-item">
+            <img src="Slide/news/reciclagem.jpg" alt="Notícia 1">
+            <div class="news-content">
+              <a href="#">Prefeitura de Garopaba lança programa de reciclagem inovador</a>
+              <p>Reduza o desperdício de resíduos sólidos na cidade com o novo programa da Prefeitura de Garopaba.</p>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="news-item">
+            <img src="Slide/news/sustentável.jpg" alt="Notícia 2">
+            <div class="news-content">
+              <a href="#">Garopaba premiada como a cidade mais sustentável da região</a>
+              <p>Descubra por que Garopaba foi reconhecida internacionalmente como uma cidade modelo em sustentabilidade.</p>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="news-item">
+            <img src="Slide/news/parque recreativo.jpg" alt="Notícia 3">
+            <div class="news-content">
+              <a href="#">Novo parque recreativo será inaugurado no próximo fim de semana</a>
+              <p>Participe da inauguração do parque recreativo que oferecerá diversão para toda a família.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="botao-veja-mais">Veja Mais</a>
+    </div>
+    <div class="video-section">
+      <!-- Vídeo incorporado -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SEu7Jv9z8-E" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="contact-banner">
-    <h2>Entre em contato conosco para obter mais informações.</h2>
-  </div>  
+
+  
+  <!-- Banner de calendário de eventos -->
+  <div class="event-banner">
+    <h2>Calendário de Eventos</h2>
+    <ul>
+      <!-- Eventos -->
+<li>
+    <a href="#">
+      <img class="small-image" src="Slide/icon/park.png" alt="Parque">
+      <h3>Parques Municipais</h3>
+      <p>Descubra o novo Parque Municipal de Garopaba e desfrute da natureza e atividades ao ar livre.</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img class="small-image" src="Slide/icon/calendar1.png" alt="Festa Cultural">
+      <h3>Festival de Cultura Local</h3>
+      <p>Celebre a diversidade cultural da nossa cidade com apresentações artísticas, música e gastronomia local.</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img class="small-image" src="Slide/icon/weather.png" alt="Previsão de Tempo">
+      <h3>Previsão de Tempo</h3>
+      <p>Fique atualizado sobre as condições climáticas da região com a apresentação da previsão de tempo.</p>
+    </a>
+  </li>  
+    </ul>
+  </div>
+    
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-contact">
+            <h3>Horário de Atendimento</h3>
+            <p class="paragraph">Estamos à disposição para atendê-lo nos seguintes horários:</p>
+            <ul>
+                <li><strong>Segunda a Sexta:</strong> 8h - 17h</li>
+                <li><strong>Sábado:</strong> 9h - 12h</li>
+                <li><strong>Domingo:</strong> Fechado</li>
+            </ul>
+            <p class="paragraph">Em caso de urgências, entre em contato conosco através do telefone:</p>
+            <p class="emergency-contact"><strong>Telefone de Emergência:</strong> (123) 456-7890</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <!-- Exemplo de link para serviços online -->
+                <li><a href="/servicos-online">Serviços Online</a></li>
+        
+                <!-- Exemplo de link para informações municipais -->
+                <li><a href="/leis-municipais">Leis Municipais</a></li>
+        
+                <!-- Exemplo de link para informações de trânsito -->
+                <li><a href="/informacoes-transito">Informações de Trânsito</a></li>
+        
+                <!-- Exemplo de link para impostos e taxas -->
+                <li><a href="/impostos-taxas">Impostos e Taxas</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="#" class="social-icon"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2023 Garopaba.com.br - Prefeitura Municipal de Garopaba</p>
+    </div>
+</footer>
+
 </body>
 </html>
